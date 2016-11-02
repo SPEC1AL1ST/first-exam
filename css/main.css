@@ -109,3 +109,18 @@
     font-weight: normal;
     color: #e50b7c;
 }
+.copyright {
+    margin: 26px auto 0;
+    color: #898989;
+    font-size: 12px;
+    text-align: center;
+}
+.copyright>span>a {
+    color: #898989;
+    text-decoration: none;
+}
+span {
+    white-space: pre-line;
+    line-height: 14px;
+    font-family: 'Arial', sans-serif;
+}
