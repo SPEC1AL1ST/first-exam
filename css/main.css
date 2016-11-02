@@ -33,16 +33,17 @@
     height: 24px;
 }
 .search-input {
-    display: inline-block;
     float: left;
     width: 805px;
     height: 22px;
     border: none;
+    font: 12px Arial;
+}
+.search-input:focus {
+    border: none;
 }
 .search-button {
     margin-top: 1px;
-    display: inline-block;
-    vertical-align: middle;
     margin-left: 15px;
     height: 21px;
     cursor: pointer;
@@ -53,8 +54,8 @@
     color: #ffffff;
 }
 .main-container {
-    border-radius: 15px;
     border: 1px solid #dbdbdb;
+    border-radius: 15px;
     overflow: hidden;
     margin-top: 24px;
 }
@@ -64,12 +65,47 @@
     background: url("../img/bg-content.gif") repeat-x;
 }
 .main-container-center {
-    height: 230px;
+    height: 218px;
     width: 100%;
-    padding: 1px 0 0 0
+    padding: 0 55px;
 }
 .main-container-bottom {
     height: 36px;
     width: 100%;
     background: url("../img/bg-content-block.gif") repeat-x;
+}
+.main-container-center h2 {
+    color: #B7B7B7;
+    padding: 8px 0 0 4px;
+    font: 400 16px 'Arial', sans-serif;
+    margin-bottom: 0;
+}
+.adblock-front {
+    height: 28px;
+    width: 47.02%;
+    padding-top: 2px;
+    padding-bottom: 6px;
+    float: left;
+}
+.adblock {
+    float: left;
+    height: 28px;
+    width: 47.02%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+.icon {
+    float: left;
+    display: inline-block;
+    width: 19px;
+    height: 15px;
+    margin: 9px 9px 0 0;
+    background: url(../img/right-arrow.png) no-repeat;
+}
+.adds a {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: normal;
+    color: #e50b7c;
 }
