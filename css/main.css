@@ -69,19 +69,15 @@
 .media-colored-block {
     display: none;
 }
-.adblock-front {
-    float: left;
-    height: 28px;
-    width: 47.02%;
-    padding-top: 2px;
-    padding-bottom: 6px;
-}
 .adblock {
     float: left;
     height: 28px;
     width: 47.02%;
     padding-top: 6px;
     padding-bottom: 6px;
+}
+.adblock-front {
+    padding-top: 2px;
 }
 .icon {
     float: left;
@@ -207,13 +203,6 @@ span {
     .navy-color {
         background: #004358;
     }
-    .adblock-front {
-        height: 35px;
-        width: 100%;
-        padding-top: 0;
-        padding-bottom: 0;
-        background: #808080 url("../img/chevron-white.png") no-repeat center right;
-    }
     .adblock {
         height: 35px;
         width: 100%;
@@ -245,7 +234,7 @@ span {
         color: #ffffff;
         padding-left: 20px;
     }
-    .hr {
+    .footer-hr {
         float: left;
         position: absolute;
         top: 472px;
