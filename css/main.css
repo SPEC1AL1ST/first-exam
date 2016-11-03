@@ -208,26 +208,29 @@ span {
         width: 100%;
         padding-top: 0;
         padding-bottom: 0;
-        background: #808080 url("../img/chevron-white.png") no-repeat center right;
+        background: #808080 url("../img/chevron-white.png") no-repeat  97% 50%;
+        background-size: auto 1em;
     }
     .icon {
         display: none;
     }
     .adds {
-        height: 33px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        height: 100%;
         border-top: 1px solid #6F6F6F;
         border-bottom: 1px solid #565656;
     }
     .adds:hover {
         border-top: 1px solid #565656;
-        border-bottom: 1px solid #565656;
         cursor: pointer;
         text-decoration: underline;
-        background: #565656 url("../img/chevron-white.png") no-repeat center right;
+        background: #565656 url("../img/chevron-white.png") no-repeat 97% 50%;
+        background-size: auto 1em;
     }
     .adds a {
-        vertical-align: middle;
-        line-height: 35px;
+        line-height: 33px;
         cursor: pointer;
         text-decoration: none;
         font-size: 18px;
