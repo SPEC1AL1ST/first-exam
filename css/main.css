@@ -26,7 +26,7 @@
     width: 805px;
     height: 22px;
     border: none;
-    font: 12px Arial;
+    font: 12px 'Arial', sans-serif;
 }
 .search-button {
     float: right;
@@ -66,6 +66,9 @@
     font: 400 16px 'Arial', sans-serif;
     margin-bottom: 0;
 }
+.media-colored-block {
+    display: none;
+}
 .adblock-front {
     float: left;
     height: 28px;
@@ -92,7 +95,6 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 24px;
-    font-weight: normal;
     color: #e50b7c;
 }
 .copyright {
@@ -111,3 +113,151 @@ span {
     line-height: 14px;
     font-family: 'Arial', sans-serif;
  }
+@media screen and (max-width: 600px) {
+    .layout {
+        width: 300px;
+        margin-left: 10px;
+    }
+    .logo {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .logo a {
+        font: 600 22px sans-serif;
+        color: #000000;
+        text-decoration: none;
+    }
+    .search {
+        position: absolute;
+        top: 430px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        border: none;
+        padding: 4px;
+        width: 300px;
+        height: 30px;
+    }
+    .search-input {
+        float: left;
+        width: 200px;
+        height: 22px;
+        border: 1px solid #dbdbdb;
+        font: 12px 'Arial', sans-serif;
+    }
+    .search-input:focus {
+        border: 1px solid #FFA500;
+    }
+    .search-button {
+        float: right;
+        cursor: pointer;
+        font-size: 13px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        background: #008000;
+        color: #ffffff;
+    }
+    .main-container {
+        border: 1px solid #dbdbdb;
+        border-radius: 5px;
+        overflow: visible;
+        margin-top: 24px;
+        padding-top: 3px;
+    }
+    .main-container-top {
+        display: none;
+    }
+    .main-container-center {
+        height: 218px;
+        width: 100%;
+        padding: 0 0;
+    }
+    .main-container-bottom {
+        display: none;
+    }
+    .main-container-center h2 {
+        color: #B7B7B7;
+        padding: 8px 0 0 4px;
+        font: 400 14px 'Arial', sans-serif;
+        margin-bottom: 0;
+        position: absolute;
+        top: 30px;
+        left: 5px;
+    }
+    .media-colored-block {
+        float: left;
+        display: inline-block;
+        height: 35px;
+        width: 7px;
+    }
+    .darkgreen-block {
+        background: #1F8A70;
+    }
+    .lightgreen-color {
+        background: #BEDB39;
+    }
+    .yellow-color {
+        background: #FFE11A;
+    }
+    .orange-color {
+        background: #FD7400;
+    }
+    .navy-color {
+        background: #004358;
+    }
+    .adblock-front {
+        float: left;
+        height: 35px;
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+        background: #808080 url("../img/chevron-white.png") no-repeat center right;
+    }
+    .adblock {
+        float: left;
+        height: 35px;
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+        background: #808080 url("../img/chevron-white.png") no-repeat center right;
+    }
+    .icon {
+        display: none;
+    }
+    .adds {
+        height: 33px;
+        border-top: 1px solid #6F6F6F;
+        border-bottom: 1px solid #565656;
+    }
+    .adds:hover {
+        border-top: 1px solid #565656;
+        border-bottom: 1px solid #565656;
+        cursor: pointer;
+        text-decoration: underline;
+        background: #565656 url("../img/chevron-white.png") no-repeat center right;
+    }
+    .adds a {
+        vertical-align: middle;
+        line-height: 35px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 18px;
+        color: #ffffff;
+        padding-left: 20px;
+    }
+    .hr {
+        float: left;
+        position: absolute;
+        top: 472px;
+        height: 1px;
+        width: 300px;
+        border-bottom: 1px solid #023e80;
+    }
+    .copyright {
+        position: absolute;
+        top: 445px;
+        width: 300px;
+    }
+}
