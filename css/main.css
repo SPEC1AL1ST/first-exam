@@ -208,7 +208,6 @@ span {
         background: #004358;
     }
     .adblock-front {
-        float: left;
         height: 35px;
         width: 100%;
         padding-top: 0;
@@ -216,7 +215,6 @@ span {
         background: #808080 url("../img/chevron-white.png") no-repeat center right;
     }
     .adblock {
-        float: left;
         height: 35px;
         width: 100%;
         padding-top: 0;
