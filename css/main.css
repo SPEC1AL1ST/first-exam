@@ -1,165 +1,174 @@
+/*CLEAR FIX*/
+.cf:before, .cf:after {
+    content: "";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
 .layout {
-    width: 912px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
+    max-width: 912px;
 }
-.logo {
-    margin-top: 20px;
-    margin-bottom: 15px;
+.header-logo {
+    margin: 20px 0 15px 0;
 }
-.logo a {
-    font: 600 28px sans-serif;
+.header-logo a {
     color: #e50b7c;
+    font: 600 28px 'Arial', sans-serif;
     text-decoration: none;
 }
-.search {
+.search-box {
     border: 1px solid #dbdbdb;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
-    padding: 4px;
-    width: 904px;
     height: 24px;
+    max-width: 904px;
+    padding: 4px;
 }
-.search-input {
-    float: left;
-    width: 805px;
-    height: 22px;
+.search-box-input {
     border: none;
+    float: left;
     font: 12px 'Arial', sans-serif;
+    height: 22px;
+    max-width: 805px;
 }
-.search-button {
-    float: right;
-    margin-top: 1px;
-    height: 21px;
-    cursor: pointer;
-    font-size: 13px;
+.search-box-button {
+    background: rgba(204,204,204,1);
     border-color: transparent;
     border-radius: 4px;
-    background: rgba(204,204,204,1);
     color: #ffffff;
+    cursor: pointer;
+    float: right;
+    font-size: 13px;
+    height: 21px;
+    margin-top: 1px;
 }
 .main-container {
     border: 1px solid #dbdbdb;
     border-radius: 15px;
-    overflow: hidden;
     margin-top: 24px;
+    overflow: hidden;
 }
 .main-container-top {
-    height: 36px;
-    width: 100%;
     background: url("../img/bg-content.gif") repeat-x;
+    height: 36px;
 }
 .main-container-center {
-    height: 218px;
-    width: 100%;
+    min-height: 218px;
     padding: 0 55px;
+    width: 100%;
 }
 .main-container-bottom {
+    background: url("../img/bg-content-block.gif") repeat-x;
     height: 36px;
     width: 100%;
-    background: url("../img/bg-content-block.gif") repeat-x;
 }
 .main-container-center h2 {
     color: #B7B7B7;
-    padding: 8px 0 0 4px;
     font: 400 16px 'Arial', sans-serif;
     margin-bottom: 0;
+    padding: 8px 0 0 4px;
 }
-.media-colored-block {
+.advertising-box-colored-block-media {
     display: none;
 }
-.adblock {
+.advertising-box {
     float: left;
     height: 28px;
-    width: 47.02%;
-    padding-top: 6px;
     padding-bottom: 6px;
+    padding-top: 6px;
+    /*width: 428px;*/
+    width: 47%;
 }
-.adblock-front {
+.advertising-box-front {
     padding-top: 2px;
 }
-.icon {
-    float: left;
+.advertising-box-icon {
+    background: url("../img/right-arrow.png") no-repeat;
     display: inline-block;
-    width: 19px;
+    float: left;
     height: 15px;
     margin: 9px 9px 0 0;
-    background: url(../img/right-arrow.png) no-repeat;
+    width: 19px;
 }
-.adds a {
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 24px;
+.advertising-box-ad a {
     color: #e50b7c;
+    cursor: pointer;
+    font-size: 24px;
+    text-decoration: none;
 }
-.copyright {
-    margin: 40px auto 0;
+.footer-copyright {
     color: #898989;
     font-size: 12px;
+    margin: 40px auto 0;
     text-align: center;
 }
-.copyright>span>a {
+.footer-copyright a {
     color: #898989;
     text-decoration: none;
 }
 span {
     display: inline-block;
-    white-space: pre-line;
-    line-height: 14px;
     font-family: 'Arial', sans-serif;
+    line-height: 14px;
+    white-space: pre-line;
  }
 @media screen and (max-width: 600px) {
     .layout {
-        width: 300px;
         margin-left: 10px;
+        max-width: 300px;
     }
-    .logo {
-        margin-top: 20px;
+    .header-logo {
         margin-bottom: 15px;
+        margin-top: 20px;
         text-align: center;
     }
-    .logo a {
-        font: 600 22px sans-serif;
+    .header-logo a {
         color: #000000;
+        font: 600 22px 'Arial', sans-serif;
         text-decoration: none;
     }
-    .search {
-        position: absolute;
-        top: 430px;
+    .search-box {
+        border: none;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        border: none;
-        padding: 4px;
-        width: 300px;
         height: 30px;
+        padding: 4px;
+        position: absolute;
+        top: 430px;
+        width: 300px;
     }
-    .search-input {
-        float: left;
-        width: 200px;
-        height: 22px;
+    .search-box-input {
         border: 1px solid #dbdbdb;
+        float: left;
         font: 12px 'Arial', sans-serif;
+        height: 22px;
+        width: 200px;
     }
-    .search-input:focus {
+    .search-box-input:focus {
         border: 1px solid #FFA500;
     }
-    .search-button {
-        float: right;
-        cursor: pointer;
-        font-size: 13px;
+    .search-box-button {
+        background: #008000;
         -webkit-border-radius: 0;
         -moz-border-radius: 0;
         border-radius: 0;
-        background: #008000;
         color: #ffffff;
+        cursor: pointer;
+        float: right;
+        font-size: 13px;
     }
     .main-container {
         border: 1px solid #dbdbdb;
         border-radius: 5px;
-        overflow: visible;
         margin-top: 24px;
+        overflow: visible;
         padding-top: 3px;
     }
     .main-container-top {
@@ -167,85 +176,85 @@ span {
     }
     .main-container-center {
         height: 218px;
-        width: 100%;
         padding: 0 0;
+        width: 100%;
     }
     .main-container-bottom {
         display: none;
     }
     .main-container-center h2 {
         color: #B7B7B7;
-        padding: 8px 0 0 4px;
         font: 400 14px 'Arial', sans-serif;
+        left: 5px;
         margin-bottom: 0;
+        padding: 8px 0 0 4px;
         position: absolute;
         top: 30px;
-        left: 5px;
     }
-    .media-colored-block {
-        float: left;
+    .advertising-box-colored-block-media {
         display: inline-block;
+        float: left;
         height: 35px;
         width: 7px;
     }
-    .darkgreen-block {
+    .block-color-darkgreen {
         background: #1F8A70;
     }
-    .lightgreen-color {
+    .block-color-lightgreen {
         background: #BEDB39;
     }
-    .yellow-color {
+    .block-color-yellow {
         background: #FFE11A;
     }
-    .orange-color {
+    .block-color-orange {
         background: #FD7400;
     }
-    .navy-color {
+    .block-color-navy {
         background: #004358;
     }
-    .adblock {
-        height: 35px;
-        width: 100%;
-        padding-top: 0;
-        padding-bottom: 0;
+    .advertising-box {
         background: #808080 url("../img/chevron-white.png") no-repeat  97% 50%;
         background-size: auto 16px;
+        height: 35px;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 100%;
     }
-    .icon {
+    .advertising-box-icon {
         display: none;
     }
-    .adds {
+    .advertising-box-ad {
+        border-bottom: 1px solid #565656;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        height: 100%;
         border-top: 1px solid #6F6F6F;
-        border-bottom: 1px solid #565656;
+        height: 100%;
     }
-    .adds:hover {
+    .advertising-box-ad:hover {
+        background: #565656 url("../img/chevron-white.png") no-repeat 97% 50%;
+        background-size: auto 16px;
         border-top: 1px solid #565656;
         cursor: pointer;
         text-decoration: underline;
-        background: #565656 url("../img/chevron-white.png") no-repeat 97% 50%;
-        background-size: auto 16px;
     }
-    .adds a {
-        line-height: 33px;
-        cursor: pointer;
-        text-decoration: none;
-        font-size: 18px;
+    .advertising-box-ad a {
         color: #ffffff;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 33px;
         padding-left: 20px;
+        text-decoration: none;
     }
     .footer-hr {
+        border-bottom: 1px solid #023e80;
         float: left;
+        height: 1px;
         position: absolute;
         top: 472px;
-        height: 1px;
         width: 300px;
-        border-bottom: 1px solid #023e80;
     }
-    .copyright {
+    .footer-copyright {
         position: absolute;
         top: 445px;
         width: 300px;
