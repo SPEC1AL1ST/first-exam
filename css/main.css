@@ -114,8 +114,9 @@
 }
 span {
     display: inline-block;
-    font-family: 'Arial', sans-serif;
-    line-height: 14px;
+    font: 12px/14px 'Arial', sans-serif;
+    /*font-family: 'Arial', sans-serif;*/
+    /*line-height: 14px;*/
     white-space: pre-line;
  }
 @media screen and (max-width: 600px) {
